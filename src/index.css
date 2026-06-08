@@ -23,3 +23,74 @@
   color: #6b7280;
   font-size: 13px;
 }
+.decision-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.eyebrow-dark {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  color: #4f46e5;
+  font-weight: 800;
+}
+
+.decision-card h3 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.decision-card p {
+  margin: 0;
+  color: #5b6475;
+  line-height: 1.5;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.customer-notes {
+  margin-top: 18px;
+  background: #fff;
+  border: 1px dashed #d1d5db;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.customer-notes h3 {
+  margin: 0 0 8px;
+}
+
+.customer-notes p {
+  margin: 0;
+  color: #5b6475;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .decision-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+}

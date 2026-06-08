@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import CustomerView from "./components/CustomerView";
 import FileUpload from "./components/FileUpload";
 import { parseExcelFiles } from "./utils/excelParser";
 import { groupRowsByModelProfile, formatNumber } from "./utils/metrics";
@@ -92,6 +93,9 @@ function App() {
       )}
 
       {groups.length > 0 ? (
+        <>
+       
+        <CustomerView groups={groups} />
         <section className="panel">
           <div className="section-header">
             <div>
@@ -138,6 +142,7 @@ function App() {
             </table>
           </div>
         </section>
+         </>
       ) : (
         <section className="empty-state">
           <h2>No sweeps uploaded yet</h2>
