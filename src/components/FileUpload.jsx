@@ -26,15 +26,9 @@ export default function FileUpload({ onFilesSelected, isLoading }) {
 
   return (
     <div className="upload-card">
-      <button
-        type="button"
-        className="upload-icon"
-        onClick={openFilePicker}
-        disabled={isLoading}
-        aria-label="Upload Excel files"
-      >
+        <div className="upload-icon"></div>
         <Upload size={32} />
-      </button>
+   
 
       <div>
         <h2>Upload performance sweeps</h2>
