@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react";
 import CustomerView from "./components/CustomerView";
-import ComparisonView from "./components/ComparisonView";
+import ComparisonView from "./components/ComparisionView";
+import EngineerView from "./components/EngineerView";
 import FileUpload from "./components/FileUpload";
 import { parseExcelFiles } from "./utils/excelParser";
-import { groupRowsByModelProfile, formatNumber } from "./utils/metrics";
+import { groupRowsByModelProfile, formatNumber } from "./utils/metric";
 import { rankGroups, DEFAULT_TARGETS } from "./utils/verdictRules";
 import "./index.css";
 

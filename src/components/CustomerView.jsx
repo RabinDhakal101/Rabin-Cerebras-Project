@@ -1,6 +1,6 @@
-import MetricCard from "./MetricCard";
+import MetricCard from "./MetricView";
 import VerdictBadge from "./VerdictBadge";
-import { formatNumber } from "../utils/metrics";
+import { formatNumber } from "../utils/metric";
 
 export default function CustomerView({ groups }) {
   if (!groups.length) {

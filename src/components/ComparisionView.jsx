@@ -1,5 +1,5 @@
 import VerdictBadge from "./VerdictBadge";
-import { formatNumber } from "../utils/metrics";
+import { formatNumber } from "../utils/metric";
 
 export default function ComparisonView({ groups }) {
   if (!groups.length) return null;

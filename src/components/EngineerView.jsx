@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { detectAnomalies } from "../utils/anomalyDetection";
-import { formatNumber } from "../utils/metrics";
+import { formatNumber } from "../utils/metric";
 import VerdictBadge from "./VerdictBadge";
 
 export default function EngineerView({ groups }) {
