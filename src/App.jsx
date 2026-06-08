@@ -98,6 +98,7 @@ function App() {
        
         <CustomerView groups={groups} />
         <ComparisonView groups={groups} />
+        <EngineerView groups={groups} />
 
         <section className="panel">
           <div className="section-header">
