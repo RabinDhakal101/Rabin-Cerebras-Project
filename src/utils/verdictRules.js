@@ -1,7 +1,7 @@
 export const DEFAULT_TARGETS = {
   minThroughput: 500,
   minOutputTokSec: 250,
-  maxTTFT: 2,
+  maxTTFT: 100,
   maxLatency: 10,
 };
 

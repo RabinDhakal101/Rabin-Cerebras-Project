@@ -101,52 +101,6 @@ function App() {
         <ComparisonView groups={groups} />
         <EngineerView groups={groups} />
 
-        <section className="panel">
-          <div className="section-header">
-            <div>
-              <h2>Model/profile summary</h2>
-              <p>
-                This is the first working view. Next we will split this into
-                Customer View, Comparison View, and Engineer View.
-              </p>
-            </div>
-          </div>
-
-          <div className="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Model</th>
-                  <th>Profile</th>
-                  <th>Rows</th>
-                  <th>Avg throughput</th>
-                  <th>Avg gen speed</th>
-                  <th>Avg TTFT</th>
-                  <th>Avg latency</th>
-                  <th>Verdict</th>
-                </tr>
-              </thead>
-              <tbody>
-                {groups.map((group) => (
-                  <tr key={group.key}>
-                    <td>{group.model}</td>
-                    <td>{group.profile}</td>
-                    <td>{group.metrics?.rowCount ?? 0}</td>
-                    <td>{formatNumber(group.metrics?.avgThroughput)}</td>
-                    <td>{formatNumber(group.metrics?.avgOutputTokSec)}</td>
-                    <td>{formatNumber(group.metrics?.avgTTFT)}</td>
-                    <td>{formatNumber(group.metrics?.avgLatency)}</td>
-                    <td>
-                      <span className={`badge ${group.verdict.severity}`}>
-                        {group.verdict.status}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
          </>
       ) : (
         <section className="empty-state">
