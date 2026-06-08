@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import CustomerView from "./components/CustomerView";
+import ComparisonView from "./components/ComparisonView";
 import FileUpload from "./components/FileUpload";
 import { parseExcelFiles } from "./utils/excelParser";
 import { groupRowsByModelProfile, formatNumber } from "./utils/metrics";
@@ -96,6 +97,8 @@ function App() {
         <>
        
         <CustomerView groups={groups} />
+        <ComparisonView groups={groups} />
+
         <section className="panel">
           <div className="section-header">
             <div>
